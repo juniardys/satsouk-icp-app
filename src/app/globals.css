@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[data-rk] {
+  @apply w-full
+}
+
+[data-rk] [aria-modal="true"][role="dialog"] {
+  top: 0 !important;
+  left: 0 !important;
+  bottom: 0 !important;
+  right: 0 !important;
+}
