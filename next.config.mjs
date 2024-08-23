@@ -35,8 +35,8 @@ const nextConfig = {
     config.externals.push('pino-pretty', 'encoding');
     return config;
   },
-  // output: 'export',
-  // distDir: 'dist',
+  output: 'export',
+  distDir: 'dist',
 };
 
 export default withJuno({ nextConfig });
