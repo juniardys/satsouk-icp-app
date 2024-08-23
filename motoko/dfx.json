@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "motoko_backend": {
+      "main": "src/motoko_backend/main.mo",
+      "type": "motoko",      
+      "dependencies": [
+        "icp_orally_canister"
+      ]
+    },
+    "icp_orally_canister": {
+      "type": "custom",
+      "candid": "https://github.com/orally-network/sybil/blob/master/xrc.did",
+      "wasm": "https://github.com/orally-network/sybil/blob/master/xrc.wasm.gz",
+      "remote": {
+        "id": {
+          "ic": "bkyz2-fmaaa-aaaaa-qaaaq-cai"
+        }
+      }
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
